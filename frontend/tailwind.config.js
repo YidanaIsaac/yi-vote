@@ -4,8 +4,20 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#137fec',
+        'background-light': '#f6f7f8',
+        'background-dark': '#101922',
+      },
+      fontFamily: {
+        'display': ['Inter', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
